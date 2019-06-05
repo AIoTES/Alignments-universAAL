@@ -56,6 +56,11 @@
         <sripas:steps rdf:parseType="Literal">
             <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#unitWithPrefix"/>
             <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#unitWithoutPrefix"/>
+            <sripas:step sripas:order="3" sripas:cell="http://www.inter-iot.eu/sripas#AdaptContextProvider"/>
+            <sripas:step sripas:order="4" sripas:cell="http://www.inter-iot.eu/sripas#CreateObservationFromDeviceCE"/>
+            <sripas:step sripas:order="5" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement"/>
+            <sripas:step sripas:order="6" sripas:cell="http://www.inter-iot.eu/sripas#changeUser"/>
+            <sripas:step sripas:order="7" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp"/>
         </sripas:steps>
 	<sripas:cellFormat>
 	  <iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle"/>
@@ -64,7 +69,7 @@
 
 	<align:map>
             <align:Cell rdf:about="http://www.inter-iot.eu/sripas#unitWithPrefix">
-                <!-- change og observation type -->
+                <!-- Change units to sweet units, this cell will transform any unit with prefix. Generates sosa:result from measurement:Measurement-->
                 <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement; 
 	    measurement:hasUnit [a unit:Unit;
@@ -79,9 +84,9 @@
        		 </align:entity1>
         
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a       measurement:Measurement;
-	    measurement:value sripas:value;
-	    measurement:hasUnit  _:unit] .
+          [ a       sosa:Result;
+	    sosa:hasResultValue sripas:value;
+	    sosa:hasUnit  _:unit] .
 	   _:unit a sweet:UnitDerivedByScaling, sripas:outputUnit;
 	  	  sweet:hasBaseUnit _:baseunit;
 		  sweet:hasPrefix   _:prefix;
@@ -144,7 +149,7 @@
 
 	<align:map>
             <align:Cell rdf:about="http://www.inter-iot.eu/sripas#unitWithoutPrefix">
-                <!-- change og observation type -->
+                <!-- Change units to sweet units, this cell will transform any unit without prefix. Generates sosa:result from measurement:Measurement -->
                 <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement; 
 	    measurement:hasUnit [a unit:Unit;
@@ -154,9 +159,9 @@
        		 </align:entity1>
         
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a       measurement:Measurement;
-	    measurement:value sripas:value;
-	    measurement:hasUnit  _:baseunit] .
+          [ a       sosa:Result;
+	    sosa:hasResultValue sripas:value;
+	    sosa:hasUnit  _:baseunit] .
 	  _:baseunit a sweet:BaseUnit, sripas:baseunit;
 		  sweet:hasSymbol sripas:unit_symbol.
         	</align:entity2>
@@ -179,5 +184,114 @@
             </align:Cell>
         </align:map>
 
+            <align:map>
+            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#AdaptContextProvider">
+                <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          	[ a       context:ContextProvider , sripas:node_CTZ ] .
+        	</align:entity1>
+                <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          	[ a       &lt;http://inter-iot.eu/medex#Gauge&gt; , sosa:Platform , sripas:node_CTZ ] .
+        	</align:entity2>
+	        <align:relation>=</align:relation>
+            </align:Cell>
+            </align:map>
+            <align:map>
+            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#CreateObservationFromDeviceCE">
+                <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a                     sripas:node_CTX ;
+            rdf:object            [ a  sripas:node_CTZ ] ;
+            rdf:predicate         device:hasValue ;
+            rdf:subject           [ a  sripas:node_CTY ] ;
+            context:hasProvider   [ a  sripas:node_CTP ] ;
+            context:hasTimestamp  [ a  sripas:node_time ]
+          ] .
+        </align:entity1>
+        
+                <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a                    sripas:node_CTX ;
+            sosa:hasResult       [ a  sripas:node_CTZ ] ;
+            sosa:madeBySensor    [ a                sripas:node_CTY ;
+                                   sosa:isHostedBy  [ a  sripas:node_CTP ]
+                                 ] ;
+            sosa:phenomenonTime  [ a                    time:Instant ;
+                                   time:inTimePosition  [ a                     time:TimePosition ;
+                                                          time:numericPosition  [ a  sripas:node_time ]
+                                                        ]
+                                 ]
+          ] .
+        </align:entity2>
+        
+              <align:relation>=</align:relation>
+        
+              <sripas:typings rdf:parseType="Literal">
+                            <typing about="http://www.inter-iot.eu/sripas#node_time" datatype="http://www.w3.org/2001/XMLSchema#decimal"/>
+              </sripas:typings>
+                </align:Cell>
+          </align:map>
+
+          <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a               sripas:node_CTO ;
+            sosa:hasResult  [ a       healthMeasurement:BloodPressure , sripas:node_CTX ;
+                              healthMeasurement:diastolicBloodPreassure
+                                      [ a                  sripas:node_CTY ;
+                                        measurement:value  [ a  sripas:node_dias ]
+                                      ] ;
+                              healthMeasurement:systolicBloodPreassure
+                                      [ a                  sripas:node_CTZ ;
+                                        measurement:value  [ a  sripas:node_sys ]
+                                      ]
+                            ]
+          ] .
+        	</align:entity1>
+        
+              	<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  sosa:Observation  ;
+            sosa:hasResult  [ a              sosa:Result , &lt;http://inter-iot.eu/medex#SystolicBloodPressure&gt; , sripas:node_CTZ ;
+                              iiot:hasValue  [ a  sripas:node_sys ]
+                            ] ,
+			    [ a              sosa:Result , &lt;http://inter-iot.eu/medex#DiastolicBloodPressure&gt; , sripas:node_CTY ;
+                              iiot:hasValue  [ a  sripas:node_dias ]
+                            ]
+          ] .
+        	</align:entity2>
+              <align:relation>=</align:relation>
+          </align:Cell>
+          </align:map>
+          <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#changeUser">
+              <!-- Change User Class -->
+        
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  &lt;http://ontology.universAAL.org/Profile.owl#User&gt; , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  iiot:User , &lt;http://ontology.universAAL.org/Profile.owl#User&gt; , sripas:node_CTY] .
+        </align:entity2>
+        
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+          <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#changeUserProp">
+              <!-- Change User Class -->
+        
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a       sripas:node_CTX ;
+            uaal:theInvolvedHumanUser  [ a  sripas:node_CTY ]
+          ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a        sripas:node_CTX ;
+            iiot:orderedByUser  [ a  sripas:node_CTY ]
+          ] .
+        </align:entity2>
+        
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
       </align:Alignment>
     </rdf:RDF>
