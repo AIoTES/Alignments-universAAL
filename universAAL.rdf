@@ -71,31 +71,29 @@
             <align:Cell rdf:about="http://www.inter-iot.eu/sripas#unitWithPrefix">
                 <!-- Change units to sweet units, this cell will transform any unit with prefix. Generates sosa:result from measurement:Measurement-->
                 <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a       measurement:Measurement; 
-	    measurement:hasUnit [a unit:Unit;
-				 unit:name [a sripas:unit_name];
-				 unit:symbol [a sripas:unit_symbol]];
-	    measurement:hasPrefix [a unit:Prefix; 
-				   unit:name [a sripas:prefix_name];
-				   unit:base [a sripas:prefix_base];
-				   unit:power [a sripas:prefix_power];
+          [ a       measurement:Measurement ; 
+	    measurement:hasUnit [a unit:Unit ;
+				 unit:name [a sripas:unit_name] ;
+				 unit:symbol [a sripas:unit_symbol]] ;
+	    measurement:hasPrefix [a unit:Prefix ; 
+				   unit:name [a sripas:prefix_name] ;
+				   unit:base [a sripas:prefix_base] ;
+				   unit:power [a sripas:prefix_power] ;
 				   unit:symbol [a sripas:prefix_symbol] ] 
 	    measurement:value	[a sripas:value]] .
        		 </align:entity1>
         
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a       sosa:Result;
-	    sosa:hasResultValue sripas:value;
+          [ a       sosa:Result ;
+	    sosa:hasResultValue sripas:value ;
 	    sosa:hasUnit  _:unit] .
-	   _:unit a sweet:UnitDerivedByScaling, sripas:outputUnit;
-	  	  sweet:hasBaseUnit _:baseunit;
-		  sweet:hasPrefix   _:prefix;
-		  sweet:hasScalingNumber [ a sripas:scale].
-	  _:baseunit a sweet:BaseUnit, sripas:baseunit;
-		  sweet:hasSymbol sripas:unit_symbol.
-	  _:prefix a sweet:Prefix, sripas:prefix;
-		  sweet:hasSymbol sripas:prefix_symbol;
-		  sweet:hasNumericValue [ a sripas:scale].
+	   _:unit a sweet:UnitDerivedByScaling, sripas:outputUnit ;
+	  	  sweet:hasBaseUnit _:baseunit ;
+		  sweet:hasPrefix   _:prefix .
+	  _:baseunit a sweet:BaseUnit, sripas:baseunit ;
+		  sweet:hasSymbol sripas:unit_symbol .
+	  _:prefix a sweet:Prefix, sripas:prefix ;
+		  sweet:hasSymbol sripas:prefix_symbol .
         	</align:entity2>
                 <align:relation>=</align:relation>
 		<sripas:transformation>
@@ -123,11 +121,6 @@
 				<param order="2" val="&sripas;l_prefix_name">
 				<return about="&sripas;prefixURI"> 
 			</function>
-			<function about="power" > <!--CHECK -->
-				<param order="1" val="&sripas;prefix_base">
-				<param order="2" val="&sripas;prefix_power">
-				<return about="&sripas;scale"> 
-			</function>
 			<function about="IRI">
 			 	<param order="1" about="&sripas;outputUnit"/>
 			  	<return about="&sripas;unitURI"/>
@@ -141,9 +134,6 @@
 			  	<return about="&sripas;prefixURI"/>
 			</function>
 		</sripas:transformation>
-		<typings>
-			<typing about="&sripas;scale" datatype="&xsd;double"/>
-		</typings>
             </align:Cell>
         </align:map>
 
