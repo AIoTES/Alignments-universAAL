@@ -95,13 +95,13 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
 	    sosa:hasResultValue sripas:value ;
-	    sosa:hasUnit  _:unit] .
-	   _:unit a sweet:UnitDerivedByScaling, sripas:outputUnit ;
-	  	  sweet:hasBaseUnit _:baseunit ;
-		  sweet:hasPrefix   _:prefix .
-	  _:baseunit a sweet:BaseUnit, sripas:baseunit ;
+	    sosa:hasUnit  sripas:unitURI] .
+	    sripas:unitURI a sweet:UnitDerivedByScaling ;
+	  	  sweet:hasBaseUnit sripas:baseUnitURI ;
+		  sweet:hasPrefix   sripas:prefixURI .
+	    sripas:baseUnitURI a sweet:BaseUnit ;
 		  sweet:hasSymbol sripas:unit_symbol .
-	  _:prefix a sweet:Prefix, sripas:prefix ;
+	    sripas:prefixURI a sweet:Prefix ;
 		  sweet:hasSymbol sripas:prefix_symbol .
         	</align:entity2>
                 <align:relation>=</align:relation>
@@ -118,24 +118,24 @@
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_prefix_name">
 				<param order="3" val="&sripas;l_unit_name">
-				<return about="&sripas;unitURI"> 
+				<return about="&sripas;unit"> 
 			</function>
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_unit_name">
-				<return about="&sripas;baseUnitURI"> 
+				<return about="&sripas;baseUnit"> 
 			</function>
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_prefix_name">
-				<return about="&sripas;prefixURI"> 
+				<return about="&sripas;prefix"> 
 			</function>
 			<function about="IRI">
-			 	<param order="1" about="&sripas;outputUnit"/>
+			 	<param order="1" about="&sripas;unit"/>
 			  	<return about="&sripas;unitURI"/>
 			</function>
 			<function about="IRI">
-			 	<param order="1" about="&sripas;baseunit"/>
+			 	<param order="1" about="&sripas;baseUnit"/>
 			  	<return about="&sripas;baseUnitURI"/>
 			</function>
 			<function about="IRI">
@@ -160,8 +160,8 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result;
 	    sosa:hasResultValue sripas:value;
-	    sosa:hasUnit  _:baseunit] .
-	  _:baseunit a sweet:BaseUnit, sripas:baseunit;
+	    sosa:hasUnit  sripas:baseUnitURI] .
+	    sripas:baseUnitURI a sweet:BaseUnit;
 		  sweet:hasSymbol sripas:unit_symbol.
         	</align:entity2>
                 <align:relation>=</align:relation>
@@ -173,10 +173,10 @@
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_unit_name">
-				<return about="&sripas;baseUnitURI"> 
+				<return about="&sripas;baseUnit"> 
 			</function>
 			<function about="IRI">
-			 	<param order="1" about="&sripas;baseunit"/>
+			 	<param order="1" about="&sripas;baseUnit"/>
 			  	<return about="&sripas;baseUnitURI"/>
 			</function>
 		</sripas:transformation>
