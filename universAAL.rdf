@@ -161,6 +161,19 @@
 			  	<return about="&sripas;prefixURI"/>
 			</function>
 		</sripas:transformation>
+	    <sripas:filters rdf:parseType="Literal">
+	                  <filter about="&sripas;l_prefix_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter about="&sripas;l_unit_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter about="&sripas;unitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter about="&sripas;baseUnitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter about="&sripas;prefixURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	    </sripas:filters>
+	
+	    <sripas:typings rdf:parseType="Literal">
+	                  <typing about="&sripas;unitURI" datatype="&xsd;anyURI"/>
+	                  <typing about="&sripas;baseUnitURI" datatype="&xsd;anyURI"/>
+	                  <typing about="&sripas;prefixURI" datatype="&xsd;anyURI"/>
+	    </sripas:typings>
             </align:Cell>
         </align:map>
 
@@ -198,6 +211,14 @@
 			  	<return about="&sripas;baseUnitURI"/>
 			</function>
 		</sripas:transformation>
+	    <sripas:filters rdf:parseType="Literal">
+	                  <filter about="&sripas;l_unit_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter about="&sripas;baseUnitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	    </sripas:filters>
+	
+	    <sripas:typings rdf:parseType="Literal">
+	                  <typing about="&sripas;baseUnitURI" datatype="&xsd;anyURI"/>
+	    </sripas:typings>
             </align:Cell>
         </align:map>
 
