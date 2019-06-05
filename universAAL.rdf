@@ -9,7 +9,7 @@
 				<!ENTITY  device "http://ontology.universAAL.org/Device.owl#"> 
 				<!ENTITY  uaal "http://ontology.universAAL.org/"> 
 				<!ENTITY  healthMeasurement "http://ontology.universaal.org/HealthMeasurement.owl#"> 
-				<!ENTITY  measurement="http://ontology.universaal.org/Measurement.owl#">
+				<!ENTITY  measurement "http://ontology.universaal.org/Measurement.owl#">
 				<!ENTITY sripas "http://www.inter-iot.eu/sripas#">
                 <!ENTITY sosa "http://www.w3.org/ns/sosa/">
                 <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
@@ -123,47 +123,47 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
 	    sosa:hasResultValue sripas:value ;
-	    sosa:hasUnit  sripas:unitURI] .
-	    sripas:unitURI a sweet:UnitDerivedByScaling ;
-	  	  sweet:hasBaseUnit sripas:baseUnitURI ;
-		  sweet:hasPrefix   sripas:prefixURI .
-	    sripas:baseUnitURI a sweet:BaseUnit ;
+	    sosa:hasUnit  _:unit] .
+	   _:unit a sweet:UnitDerivedByScaling, sripas:outputUnit ;
+	  	  sweet:hasBaseUnit _:baseunit ;
+		  sweet:hasPrefix   _:prefix .
+	  _:baseunit a sweet:BaseUnit, sripas:baseunit ;
 		  sweet:hasSymbol sripas:unit_symbol .
-	    sripas:prefixURI a sweet:Prefix ;
+	  _:prefix a sweet:Prefix, sripas:prefix ;
 		  sweet:hasSymbol sripas:prefix_symbol .
         	</align:entity2>
                 <align:relation>=</align:relation>
 		<sripas:transformation>
 			<function about="lcase"><!--CHECK -->
 				<param order="1" val="&sripas;prefix_name">
-				<return about="&sripas;l_prefix_name"> 
+				<return about="&sripas;l_prefix_name"/> 
 			</function>
 			<function about="lcase"><!--CHECK -->
 				<param order="1" val="&sripas;unit_name">
-				<return about="&sripas;l_unit_name"> 
+				<return about="&sripas;l_unit_name"/> 
 			</function>
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_prefix_name">
 				<param order="3" val="&sripas;l_unit_name">
-				<return about="&sripas;unit"> 
+				<return about="&sripas;unitURI"/> 
 			</function>
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_unit_name">
-				<return about="&sripas;baseUnit"> 
+				<return about="&sripas;baseUnitURI"/> 
 			</function>
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_prefix_name">
-				<return about="&sripas;prefix"> 
+				<return about="&sripas;prefixURI"/> 
 			</function>
 			<function about="IRI">
-			 	<param order="1" about="&sripas;unit"/>
+			 	<param order="1" about="&sripas;outputUnit"/>
 			  	<return about="&sripas;unitURI"/>
 			</function>
 			<function about="IRI">
-			 	<param order="1" about="&sripas;baseUnit"/>
+			 	<param order="1" about="&sripas;baseunit"/>
 			  	<return about="&sripas;baseUnitURI"/>
 			</function>
 			<function about="IRI">
@@ -188,23 +188,23 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result;
 	    sosa:hasResultValue sripas:value;
-	    sosa:hasUnit  sripas:baseUnitURI] .
-	    sripas:baseUnitURI a sweet:BaseUnit;
+	    sosa:hasUnit  _:baseunit] .
+	  _:baseunit a sweet:BaseUnit, sripas:baseunit;
 		  sweet:hasSymbol sripas:unit_symbol.
         	</align:entity2>
                 <align:relation>=</align:relation>
 		<sripas:transformation>
 			<function about="lcase"><!--CHECK -->
 				<param order="1" val="&sripas;unit_name">
-				<return about="&sripas;l_unit_name"> 
+				<return about="&sripas;l_unit_name"/> 
 			</function>
 			<function about="concat">
 				<param order="1" val="http://sweetontology.net/reprSciUnits/">
 				<param order="2" val="&sripas;l_unit_name">
-				<return about="&sripas;baseUnit"> 
+				<return about="&sripas;baseUnitURI"/> 
 			</function>
 			<function about="IRI">
-			 	<param order="1" about="&sripas;baseUnit"/>
+			 	<param order="1" about="&sripas;baseunit"/>
 			  	<return about="&sripas;baseUnitURI"/>
 			</function>
 		</sripas:transformation>
