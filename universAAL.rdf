@@ -22,7 +22,8 @@
 	xmlns:uaal="http://ontology.universAAL.org/" 
 	xmlns:healthMeasurement="http://ontology.universaal.org/HealthMeasurement.owl#" 
 	xmlns:measurement="http://ontology.universaal.org/Measurement.owl#"
-	xmlns:sweet="http://sweetontology.net/reprSciUnits/">
+	xmlns:sweet="http://sweetontology.net/reprSciUnits/"
+	xmlns:m3="http://purl.org/iot/vocab/m3-lite">
       <align:Alignment>
             <dcelem:title>universAAL-AIOTES-Alignment</dcelem:title>
             <exmo:version>1.0</exmo:version>
@@ -56,11 +57,19 @@
         <sripas:steps rdf:parseType="Literal">
             <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#unitWithPrefix"/>
             <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#unitWithoutPrefix"/>
-            <sripas:step sripas:order="3" sripas:cell="http://www.inter-iot.eu/sripas#AdaptContextProvider"/>
-            <sripas:step sripas:order="4" sripas:cell="http://www.inter-iot.eu/sripas#CreateObservationFromDeviceCE"/>
-            <sripas:step sripas:order="5" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement"/>
-            <sripas:step sripas:order="6" sripas:cell="http://www.inter-iot.eu/sripas#changeUser"/>
-            <sripas:step sripas:order="7" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp"/>
+            <sripas:step sripas:order="3" sripas:cell="http://www.inter-iot.eu/sripas#PresenceSensor"/>
+            <sripas:step sripas:order="4" sripas:cell="http://www.inter-iot.eu/sripas#COSensor"/>
+            <sripas:step sripas:order="5" sripas:cell="http://www.inter-iot.eu/sripas#SmokeSensor"/>
+            <sripas:step sripas:order="6" sripas:cell="http://www.inter-iot.eu/sripas#FallSensor"/>
+            <sripas:step sripas:order="7" sripas:cell="http://www.inter-iot.eu/sripas#ContactSensor"/>
+            <sripas:step sripas:order="8" sripas:cell="http://www.inter-iot.eu/sripas#TemperatureSensor"/>
+            <sripas:step sripas:order="9" sripas:cell="http://www.inter-iot.eu/sripas#HumiditySensor"/>
+            <sripas:step sripas:order="10" sripas:cell="http://www.inter-iot.eu/sripas#LightSensor"/>
+            <sripas:step sripas:order="11" sripas:cell="http://www.inter-iot.eu/sripas#AdaptContextProvider"/>
+            <sripas:step sripas:order="12" sripas:cell="http://www.inter-iot.eu/sripas#CreateObservationFromDeviceCE"/>
+            <sripas:step sripas:order="13" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement"/>
+            <sripas:step sripas:order="14" sripas:cell="http://www.inter-iot.eu/sripas#changeUser"/>
+            <sripas:step sripas:order="15" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp"/>
         </sripas:steps>
 	<sripas:cellFormat>
 	  <iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle"/>
@@ -174,6 +183,109 @@
             </align:Cell>
         </align:map>
 
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#PresenceSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:PresenceSensor , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  m3:PresenceDetector , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#COSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:COSensor , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  m3:GaseousPollutantSensor , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#SmokeSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:SmokeSensor , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  &lt;http://casas.wsu.edu/owl/cose.owl#SmokeAlarm&gt; , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#FallSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:FallSensor , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  m3:FallDetector , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#ContactSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:ContactSensor , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  m3:DoorStateSensor , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#HumiditySensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:HumiditySensor , sripas:node_CTY ] .
+        </align:entity1>
+        
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  &lt;http://purl.oclc.org/NET/ssnx/meteo/aws#HumiditySensor&gt; , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#TemperatureSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:TemperatureSensor , sripas:node_CTY ] .
+        </align:entity1>
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  m3:AirThermometer , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
+         <align:map>
+          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#LightSensor">
+              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a  device:LightSensor , sripas:node_CTY ] .
+        </align:entity1>
+              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [  a  m3:LightSensor , sripas:node_CTY] .
+        </align:entity2>
+              <align:relation>=</align:relation>
+                </align:Cell>
+          </align:map>
+
             <align:map>
             <align:Cell rdf:about="http://www.inter-iot.eu/sripas#AdaptContextProvider">
                 <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
@@ -251,8 +363,7 @@
           </align:map>
           <align:map>
           <align:Cell rdf:about="http://www.inter-iot.eu/sripas#changeUser">
-              <!-- Change User Class -->
-        
+              <!-- Change User Class; REVIEW after DM is updated with different User types -->
               <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a  &lt;http://ontology.universAAL.org/Profile.owl#User&gt; , sripas:node_CTY ] .
         </align:entity1>
