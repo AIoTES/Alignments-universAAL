@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:iiot="http://inter-iot.eu/GOIoTP#" xmlns:exmo="http://exmo.inrialpes.fr/align/ext/1.0/#" xmlns:saref="https://w3id.org/saref#" xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns="http://www.inter-iot.eu/sripas#" xmlns:sripas="http://www.inter-iot.eu/sripas#" xmlns:time="http://www.w3.org/2006/time#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dcelem="http://purl.org/dc/elements/1.1/" xmlns:co="http://inter-iot.eu/central" xmlns:geo-sf="http://www.opengis.net/def/sf/" xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" xmlns:sosa="http://www.w3.org/ns/sosa/" xmlns:saref-ps="http://ontology.tno.nl/saref/positionsensor#" xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:iiot="http://inter-iot.eu/GOIoTP#" 
+	xmlns:exmo="http://exmo.inrialpes.fr/align/ext/1.0/#" 
+	xmlns:saref="https://w3id.org/saref#" 
+	xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#" 
+	xmlns="http://www.inter-iot.eu/sripas#" 
+	xmlns:sripas="http://www.inter-iot.eu/sripas#" 
+	xmlns:time="http://www.w3.org/2006/time#" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+	xmlns:dcelem="http://purl.org/dc/elements/1.1/" 
+	xmlns:co="http://inter-iot.eu/central" 
+	xmlns:geo-sf="http://www.opengis.net/def/sf/" 
+	xmlns:align="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#" 
+	xmlns:sosa="http://www.w3.org/ns/sosa/" 
+	xmlns:saref-ps="http://ontology.tno.nl/saref/positionsensor#" 
+	xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+	xmlns:unit="http://ontology.universAAL.org/Unit.owl#"
+	xmlns:context="http://ontology.universAAL.org/Context.owl#"
+	xmlns:device="http://ontology.universAAL.org/Device.owl#" 
+	xmlns:uaal="http://ontology.universAAL.org/" 
+	xmlns:healthMeasurement="http://ontology.universaal.org/HealthMeasurement.owl#" 
+	xmlns:measurement="http://ontology.universaal.org/Measurement.owl#"
+	xmlns:sweet="http://sweetontology.net/reprSciUnits/">
       <align:Alignment>
             <dcelem:title>universAAL-AIOTES-Alignment</dcelem:title>
             <exmo:version>1.0</exmo:version>
@@ -31,104 +54,130 @@
             </align:Ontology>
             </align:onto2>
         <sripas:steps rdf:parseType="Literal">
-            <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#cell1"/>
-      
-            <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#cell2"/>
+            <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#unitWithPrefix"/>
+            <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#unitWithoutPrefix"/>
         </sripas:steps>
-            <sripas:cellFormat>
-                  <iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle"/>
-            </sripas:cellFormat>
-            <align:map>
-            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#cell1">
+	<sripas:cellFormat>
+	  <iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle"/>
+	</sripas:cellFormat>
+
+
+	<align:map>
+            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#unitWithPrefix">
+                <!-- change og observation type -->
                 <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a                       sripas:node_CTZ ;
-            saref:makesMeasurement  [ a                   saref:Measurement , sripas:node_CTC ;
-                                      saref:hasTimestamp  [ a                   sripas:node_CTB ;
-                                                            time:inXSDDateTime  [ a  sripas:node_x ]
-                                                          ] ;
-                                      saref:hasValue      [ a  sripas:node_CTA ]
-                                    ]
-          ] .
-        </align:entity1>
+          [ a       measurement:Measurement; 
+	    measurement:hasUnit [a unit:Unit;
+				 unit:name [a sripas:unit_name];
+				 unit:symbol [a sripas:unit_symbol]];
+	    measurement:hasPrefix [a unit:Prefix; 
+				   unit:name [a sripas:prefix_name];
+				   unit:base [a sripas:prefix_base];
+				   unit:power [a sripas:prefix_power];
+				   unit:symbol [a sripas:prefix_symbol] ] 
+	    measurement:value	[a sripas:value]] .
+       		 </align:entity1>
         
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a                      sosa:Observation , sripas:node_CTC ;
-            sosa:hasResult         [ a  sripas:node_CTA ] ;
-            sosa:madeBySensor      [ a  sripas:node_CTZ ] ;
-            sosa:observedProperty  [ a  co:Position ] ;
-            sosa:resultTime        [ a  sripas:node_x ]
-          ] .
-        </align:entity2>
-        
-              <align:relation>=</align:relation>
-        
-              <sripas:typings rdf:parseType="Literal">
-                            <typing about="http://www.inter-iot.eu/sripas#node_x" datatype="http://www.w3.org/2001/XMLSchema#dateTime"/>
-              </sripas:typings>
-                </align:Cell>
-          </align:map>
-          <align:map>
-          <align:Cell rdf:about="http://www.inter-iot.eu/sripas#cell2">
-              <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a               wgs84_pos:Point , sripas:node_CTX ;
-            wgs84_pos:lat   [ a  sripas:node_x ] ;
-            wgs84_pos:long  [ a  sripas:node_y ]
-          ] .
-        </align:entity1>
-        
-              <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-          [ a                sosa:Result , geosparql:Geometry , sripas:node_CTX ;
-            geosparql:asWKT  [ a  sripas:node_z ]
-          ] .
-        </align:entity2>
-        
-            <align:relation>=</align:relation>
-        
-            <sripas:transformation rdf:parseType="Literal">
-                <function about="str">
-            
-                    <param order="1" about="http://www.inter-iot.eu/sripas#node_x"/>
-            
-                    <return about="http://www.inter-iot.eu/sripas#node_sx"/>
-                </function>
-          
-                <function about="str">
-            
-                    <param order="1" about="http://www.inter-iot.eu/sripas#node_y"/>
-            
-                    <return about="http://www.inter-iot.eu/sripas#node_sy"/>
-                </function>
-          
-                <function about="concat">
-            
-                    <param order="1" val="Point("/>
-            
-                    <param order="2" about="http://www.inter-iot.eu/sripas#node_sx"/>
-            
-                    <param order="3" val=" "/>
-            
-                    <param order="4" about="http://www.inter-iot.eu/sripas#node_sy"/>
-            
-                    <param order="5" val=")"/>
-            
-                    <return about="http://www.inter-iot.eu/sripas#node_z"/>
-                </function>
-            </sripas:transformation>
-        
-            <sripas:filters rdf:parseType="Literal">
-                          <filter about="http://www.inter-iot.eu/sripas#node_x" datatype="http://www.w3.org/2001/XMLSchema#float"/>
-          
-                          <filter about="http://www.inter-iot.eu/sripas#node_y" datatype="http://www.w3.org/2001/XMLSchema#float"/>
-          
-                          <filter about="http://www.inter-iot.eu/sripas#node_sx" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-          
-                          <filter about="http://www.inter-iot.eu/sripas#node_sy" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-            </sripas:filters>
-        
-            <sripas:typings rdf:parseType="Literal">
-                          <typing about="http://www.inter-iot.eu/sripas#node_z" datatype="http://www.opengis.net/def/sf/wktLiteral"/>
-            </sripas:typings>
-              </align:Cell>
+          [ a       measurement:Measurement;
+	    measurement:value sripas:value;
+	    measurement:hasUnit  _:unit] .
+	   _:unit a sweet:UnitDerivedByScaling, sripas:outputUnit;
+	  	  sweet:hasBaseUnit _:baseunit;
+		  sweet:hasPrefix   _:prefix;
+		  sweet:hasScalingNumber [ a sripas:scale].
+	  _:baseunit a sweet:BaseUnit, sripas:baseunit;
+		  sweet:hasSymbol sripas:unit_symbol.
+	  _:prefix a sweet:Prefix, sripas:prefix;
+		  sweet:hasSymbol sripas:prefix_symbol;
+		  sweet:hasNumericValue [ a sripas:scale].
+        	</align:entity2>
+                <align:relation>=</align:relation>
+		<sripas:transformation>
+			<function about="lcase"><!--CHECK -->
+				<param order="1" val="&sripas;prefix_name">
+				<return about="&sripas;l_prefix_name"> 
+			</function>
+			<function about="lcase"><!--CHECK -->
+				<param order="1" val="&sripas;unit_name">
+				<return about="&sripas;l_unit_name"> 
+			</function>
+			<function about="concat">
+				<param order="1" val="http://sweetontology.net/reprSciUnits/">
+				<param order="2" val="&sripas;l_prefix_name">
+				<param order="3" val="&sripas;l_unit_name">
+				<return about="&sripas;unitURI"> 
+			</function>
+			<function about="concat">
+				<param order="1" val="http://sweetontology.net/reprSciUnits/">
+				<param order="2" val="&sripas;l_unit_name">
+				<return about="&sripas;baseUnitURI"> 
+			</function>
+			<function about="concat">
+				<param order="1" val="http://sweetontology.net/reprSciUnits/">
+				<param order="2" val="&sripas;l_prefix_name">
+				<return about="&sripas;prefixURI"> 
+			</function>
+			<function about="power" > <!--CHECK -->
+				<param order="1" val="&sripas;prefix_base">
+				<param order="2" val="&sripas;prefix_power">
+				<return about="&sripas;scale"> 
+			</function>
+			<function about="IRI">
+			 	<param order="1" about="&sripas;outputUnit"/>
+			  	<return about="&sripas;unitURI"/>
+			</function>
+			<function about="IRI">
+			 	<param order="1" about="&sripas;baseunit"/>
+			  	<return about="&sripas;baseUnitURI"/>
+			</function>
+			<function about="IRI">
+			 	<param order="1" about="&sripas;prefix"/>
+			  	<return about="&sripas;prefixURI"/>
+			</function>
+		</sripas:transformation>
+		<typings>
+			<typing about="&sripas;scale" datatype="&xsd;double"/>
+		</typings>
+            </align:Cell>
         </align:map>
+
+	<align:map>
+            <align:Cell rdf:about="http://www.inter-iot.eu/sripas#unitWithoutPrefix">
+                <!-- change og observation type -->
+                <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a       measurement:Measurement; 
+	    measurement:hasUnit [a unit:Unit;
+				 unit:name [a sripas:unit_name];
+				 unit:symbol [a sripas:unit_symbol]]; 
+	    measurement:value	[a sripas:value]] .
+       		 </align:entity1>
+        
+                <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+          [ a       measurement:Measurement;
+	    measurement:value sripas:value;
+	    measurement:hasUnit  _:baseunit] .
+	  _:baseunit a sweet:BaseUnit, sripas:baseunit;
+		  sweet:hasSymbol sripas:unit_symbol.
+        	</align:entity2>
+                <align:relation>=</align:relation>
+		<sripas:transformation>
+			<function about="lcase"><!--CHECK -->
+				<param order="1" val="&sripas;unit_name">
+				<return about="&sripas;l_unit_name"> 
+			</function>
+			<function about="concat">
+				<param order="1" val="http://sweetontology.net/reprSciUnits/">
+				<param order="2" val="&sripas;l_unit_name">
+				<return about="&sripas;baseUnitURI"> 
+			</function>
+			<function about="IRI">
+			 	<param order="1" about="&sripas;baseunit"/>
+			  	<return about="&sripas;baseUnitURI"/>
+			</function>
+		</sripas:transformation>
+            </align:Cell>
+        </align:map>
+
       </align:Alignment>
     </rdf:RDF>
