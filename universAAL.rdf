@@ -115,7 +115,7 @@
 	    sosa:hasResultValue sripas:value ;
 	    sosa:hasUnit  sripas:unitURI ] .
 	   sripas:unitURI a sweet:UnitDerivedByScaling ;
-	  	  sweet:hasBaseUnit sripas:baseUnitURI ;
+	  	  sweet:hasBaseUnit sripas:baseUnitURI ; <!-- is this possible?-->
 		  sweet:hasPrefix   sripas:prefixURI .
 	   sripas:baseUnitURI a sweet:BaseUnit ;
 		  sweet:hasSymbol sripas:unit_symbol .
@@ -123,56 +123,56 @@
 		  sweet:hasSymbol sripas:prefix_symbol .
         	</align:entity2>
                 <align:relation>=</align:relation>
-		<sripas:transformation>
-			<function about="lcase"><!--CHECK -->
-				<param order="1" val="&sripas;prefix_name"/>
-				<return about="&sripas;l_prefix_name"/> 
-			</function>
-			<function about="lcase"><!--CHECK -->
-				<param order="1" val="&sripas;unit_name"/>
-				<return about="&sripas;l_unit_name"/> 
-			</function>
-			<function about="concat">
-				<param order="1" val="http://sweetontology.net/reprSciUnits/"/>
-				<param order="2" val="&sripas;l_prefix_name"/>
-				<param order="3" val="&sripas;l_unit_name"/>
-				<return about="&sripas;unitURISTR"/> 
-			</function>
-			<function about="concat">
-				<param order="1" val="http://sweetontology.net/reprSciUnits/"/>
-				<param order="2" val="&sripas;l_unit_name"/>
-				<return about="&sripas;baseUnitURISTR"/> 
-			</function>
-			<function about="concat">
-				<param order="1" val="http://sweetontology.net/reprSciUnits/"/>
-				<param order="2" val="&sripas;l_prefix_name"/>
-				<return about="&sripas;prefixURISTR"/> 
-			</function>
-			<function about="IRI">
-			 	<param order="1" about="&sripas;unitURISTR"/>
-			  	<return about="&sripas;unitURI"/>
-			</function>
-			<function about="IRI">
-			 	<param order="1" about="&sripas;baseUnitURISTR"/>
-			  	<return about="&sripas;baseUnitURI"/>
-			</function>
-			<function about="IRI">
-			 	<param order="1" about="&sripas;prefixURISTR"/>
-			  	<return about="&sripas;prefixURI"/>
-			</function>
+		<sripas:transformation rdf:parseType="Literal">
+			<sripas:function sripas:about="lcase"><!--CHECK -->
+				<sripas:param sripas:order="1" sripas:val="&sripas;prefix_name"/>
+				<sripas:return sripas:about="&sripas;l_prefix_name"/> 
+			</sripas:function>
+			<sripas:function sripas:about="lcase"><!--CHECK -->
+				<sripas:param sripas:order="1" sripas:val="&sripas;unit_name"/>
+				<sripas:return sripas:about="&sripas;l_unit_name"/> 
+			</sripas:function>
+			<sripas:function sripas:about="concat">
+				<sripas:param sripas:order="1" sripas:val="http://sweetontology.net/reprSciUnits/"/>
+				<sripas:param sripas:order="2" sripas:val="&sripas;l_prefix_name"/>
+				<sripas:param sripas:order="3" sripas:val="&sripas;l_unit_name"/>
+				<return sripas:about="&sripas;unitURISTR"/> 
+			</sripas:function>
+			<sripas:function sripas:about="concat">
+				<sripas:param sripas:order="1" sripas:val="http://sweetontology.net/reprSciUnits/"/>
+				<sripas:param sripas:order="2" sripas:val="&sripas;l_unit_name"/>
+				<return sripas:about="&sripas;baseUnitURISTR"/> 
+			</sripas:function>
+			<sripas:function sripas:about="concat">
+				<sripas:param sripas:order="1" sripas:val="http://sweetontology.net/reprSciUnits/"/>
+				<sripas:param sripas:order="2" sripas:val="&sripas;l_prefix_name"/>
+				<return sripas:about="&sripas;prefixURISTR"/> 
+			</sripas:function>
+			<sripas:function sripas:about="IRI">
+			 	<sripas:param sripas:order="1" sripas:about="&sripas;unitURISTR"/>
+			  	<return sripas:about="&sripas;unitURI"/>
+			</sripas:function>
+			<sripas:function sripas:about="IRI">
+			 	<sripas:param sripas:order="1" sripas:about="&sripas;baseUnitURISTR"/>
+			  	<return sripas:about="&sripas;baseUnitURI"/>
+			</sripas:function>
+			<sripas:function sripas:about="IRI">
+			 	<sripas:param sripas:order="1" sripas:about="&sripas;prefixURISTR"/>
+			  	<return sripas:about="&sripas;prefixURI"/>
+			</sripas:function>
 		</sripas:transformation>
 	    <sripas:filters rdf:parseType="Literal">
-	                  <filter about="&sripas;l_prefix_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-	                  <filter about="&sripas;l_unit_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-	                  <filter about="&sripas;unitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-	                  <filter about="&sripas;baseUnitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-	                  <filter about="&sripas;prefixURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;l_prefix_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;l_unit_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;unitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;baseUnitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;prefixURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
 	    </sripas:filters>
 	
 	    <sripas:typings rdf:parseType="Literal">
-	                  <typing about="&sripas;unitURI" datatype="&xsd;anyURI"/>
-	                  <typing about="&sripas;baseUnitURI" datatype="&xsd;anyURI"/>
-	                  <typing about="&sripas;prefixURI" datatype="&xsd;anyURI"/>
+	                  <typing sripas:about="&sripas;unitURI" datatype="&xsd;anyURI"/>
+	                  <typing sripas:about="&sripas;baseUnitURI" datatype="&xsd;anyURI"/>
+	                  <typing sripas:about="&sripas;prefixURI" datatype="&xsd;anyURI"/>
 	    </sripas:typings>
             </align:Cell>
         </align:map>
@@ -191,29 +191,29 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result;
 	    sosa:hasResultValue sripas:value;
-	    sosa:hasUnit  sripas:baseUnitURI] .
-	    sripas:baseUnitURI a sweet:BaseUnit ;
-		  sweet:hasSymbol sripas:unit_symbol.
+	    sosa:hasUnit  sripas:baseUnitURI
+	    [a sweet:BaseUnit ;
+		  sweet:hasSymbol sripas:unit_symbol].
         	</align:entity2>
                 <align:relation>=</align:relation>
-		<sripas:transformation>
-			<function about="lcase"><!--CHECK -->
-				<param order="1" val="&sripas;unit_name"/>
-				<return about="&sripas;l_unit_name"/> 
-			</function>
-			<function about="concat">
-				<param order="1" val="http://sweetontology.net/reprSciUnits/"/>
-				<param order="2" val="&sripas;l_unit_name"/>
-				<return about="&sripas;baseUnitURISTR"/> 
-			</function>
-			<function about="IRI">
-			 	<param order="1" about="&sripas;baseUnitURISTR"/>
-			  	<return about="&sripas;baseUnitURI"/>
-			</function>
+		<sripas:transformation rdf:parseType="Literal">
+			<sripas:function sripas:about="lcase"><!--CHECK -->
+				<sripas:param sripas:order="1" sripas:val="&sripas;unit_name"/>
+				<sripas:return sripas:about="&sripas;l_unit_name"/> 
+			</sripas:function>
+			<sripas:function sripas:about="concat">
+				<sripas:param sripas:order="1" sripas:val="http://sweetontology.net/reprSciUnits/"/>
+				<sripas:param sripas:order="2" sripas:val="&sripas;l_unit_name"/>
+				<sripas:return sripas:about="&sripas;baseUnitURISTR"/> 
+			</sripas:function>
+			<sripas:function sripas:about="IRI">
+			 	<sripas:param sripas:order="1" sripas:about="&sripas;baseUnitURISTR"/>
+			  	<return sripas:about="&sripas;baseUnitURI"/>
+			</sripas:function>
 		</sripas:transformation>
 	    <sripas:filters rdf:parseType="Literal">
-	                  <filter about="&sripas;l_unit_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
-	                  <filter about="&sripas;baseUnitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;l_unit_name" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+	                  <filter sripas:about="&sripas;baseUnitURISTR" datatype="http://www.w3.org/2001/XMLSchema#string"/>
 	    </sripas:filters>
 	
 	    <sripas:typings rdf:parseType="Literal">
