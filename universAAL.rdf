@@ -191,9 +191,9 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result;
 	    sosa:hasResultValue sripas:value;
-	    sosa:hasUnit  sripas:baseUnitURI
-	    [a sweet:BaseUnit ;
-		  sweet:hasSymbol sripas:unit_symbol].
+	    sosa:hasUnit  sripas:baseUnitURI ].
+	    sripas:baseUnitURI a sweet:BaseUnit ;
+		  sweet:hasSymbol sripas:unit_symbol.
         	</align:entity2>
                 <align:relation>=</align:relation>
 		<sripas:transformation rdf:parseType="Literal">
@@ -234,7 +234,6 @@
               <align:relation>=</align:relation>
                 </align:Cell>
           </align:map>
-
 
          <align:map>
           <align:Cell rdf:about="http://www.inter-iot.eu/sripas#COSensor">
