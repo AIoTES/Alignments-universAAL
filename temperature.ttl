@@ -1,0 +1,20 @@
+@prefix ns: <http://ontology.universaal.org/PhThing.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1: <http://ontology.universAAL.org/InterIoT.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns2: <http://ontology.universaal.org/ActivageOntology.owl#> .
+@prefix ns3: <http://ontology.universAAL.org/Device.owl#> .
+@prefix : <http://ontology.universAAL.org/Context.owl#> .
+<urn:org.universAAL.middleware.context.rdf:ContextEvent#_:7f0001012060ff51:ef3> :hasProvider ns2:ZWaveContextPublisher ;
+  a :ContextEvent ;
+  rdf:subject <http://ontology.universAAL.org/InterIoT.owl#b8:27:eb:44:d6:d9:3> ;
+  :hasTimestamp "1559549633992"^^xsd:long ;
+  rdf:predicate ns3:hasValue ;
+  rdf:object "24.9"^^xsd:float .
+:controller a :ContextProviderType .
+<http://ontology.universAAL.org/InterIoT.owl#b8:27:eb:44:d6:d9:3> a ns3:TemperatureSensor ,
+    ns:Device ,
+    ns:PhysicalThing ;
+  ns3:hasValue "24.9"^^xsd:float .
+ns2:ZWaveContextPublisher a :ContextProvider ;
+  :hasType :controller .

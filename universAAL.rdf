@@ -54,7 +54,7 @@
 	xmlns:m3="http://purl.org/iot/vocab/m3-lite">
       <align:Alignment>
             <dcelem:title>universAAL-AIOTES-Alignment</dcelem:title>
-            <exmo:version>1.0</exmo:version>
+            <exmo:version>1.1</exmo:version>
             <dcelem:creator>amedrano</dcelem:creator>
             <dcelem:description>Alignment between universAAL Core Ontologies and AIOTES Datamodel</dcelem:description>
             <dcelem:date>Wed Jun 02 11:29:56 GMT 2019</dcelem:date>
