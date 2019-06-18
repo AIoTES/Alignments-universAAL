@@ -73,21 +73,21 @@
             </align:Ontology>
             </align:onto2>
         <sripas:steps rdf:parseType="Literal">
-            <!--sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#unitWithPrefix"/>
-            <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#unitWithoutPrefix"/-->
-            <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#PresenceSensor"/>
-            <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#COSensor"/>
-            <sripas:step sripas:order="3" sripas:cell="http://www.inter-iot.eu/sripas#SmokeSensor"/>
-            <sripas:step sripas:order="4" sripas:cell="http://www.inter-iot.eu/sripas#FallSensor"/>
-            <sripas:step sripas:order="5" sripas:cell="http://www.inter-iot.eu/sripas#ContactSensor"/>
-            <sripas:step sripas:order="6" sripas:cell="http://www.inter-iot.eu/sripas#TemperatureSensor"/>
-            <sripas:step sripas:order="7" sripas:cell="http://www.inter-iot.eu/sripas#HumiditySensor"/>
-            <sripas:step sripas:order="8" sripas:cell="http://www.inter-iot.eu/sripas#LightSensor"/>
-            <sripas:step sripas:order="9" sripas:cell="http://www.inter-iot.eu/sripas#AdaptContextProvider"/>
-            <sripas:step sripas:order="10" sripas:cell="http://www.inter-iot.eu/sripas#CreateObservationFromDeviceCE"/>
-            <sripas:step sripas:order="11" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement"/>
-            <sripas:step sripas:order="12" sripas:cell="http://www.inter-iot.eu/sripas#changeUser"/>
-            <sripas:step sripas:order="13" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp"/>
+            <sripas:step sripas:order="1" sripas:cell="http://www.inter-iot.eu/sripas#unit1"/>
+            <!--sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#unitWithoutPrefix"/-->
+            <sripas:step sripas:order="2" sripas:cell="http://www.inter-iot.eu/sripas#PresenceSensor"/>
+            <sripas:step sripas:order="3" sripas:cell="http://www.inter-iot.eu/sripas#COSensor"/>
+            <sripas:step sripas:order="4" sripas:cell="http://www.inter-iot.eu/sripas#SmokeSensor"/>
+            <sripas:step sripas:order="5" sripas:cell="http://www.inter-iot.eu/sripas#FallSensor"/>
+            <sripas:step sripas:order="6" sripas:cell="http://www.inter-iot.eu/sripas#ContactSensor"/>
+            <sripas:step sripas:order="7" sripas:cell="http://www.inter-iot.eu/sripas#TemperatureSensor"/>
+            <sripas:step sripas:order="8" sripas:cell="http://www.inter-iot.eu/sripas#HumiditySensor"/>
+            <sripas:step sripas:order="9" sripas:cell="http://www.inter-iot.eu/sripas#LightSensor"/>
+            <sripas:step sripas:order="10" sripas:cell="http://www.inter-iot.eu/sripas#AdaptContextProvider"/>
+            <sripas:step sripas:order="11" sripas:cell="http://www.inter-iot.eu/sripas#CreateObservationFromDeviceCE"/>
+            <sripas:step sripas:order="12" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement"/>
+            <sripas:step sripas:order="13" sripas:cell="http://www.inter-iot.eu/sripas#changeUser"/>
+            <sripas:step sripas:order="14" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp"/>
         </sripas:steps>
 	<sripas:cellFormat>
 	  <iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle"/>
