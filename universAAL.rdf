@@ -2,29 +2,29 @@
 
 <!DOCTYPE Alignment
         [
-                <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+				<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 				<!ENTITY exmo "http://exmo.inrialpes.fr/align/ext/1.0/#">
 				<!ENTITY  unit "http://ontology.universAAL.org/Unit.owl#">
 				<!ENTITY  context "http://ontology.universAAL.org/Context.owl#">
-				<!ENTITY  device "http://ontology.universAAL.org/Device.owl#"> 
-				<!ENTITY  uaal "http://ontology.universAAL.org/"> 
-				<!ENTITY  healthMeasurement "http://ontology.universaal.org/HealthMeasurement.owl#"> 
+				<!ENTITY  device "http://ontology.universAAL.org/Device.owl#">
+				<!ENTITY  uaal "http://ontology.universAAL.org/">
+				<!ENTITY  healthMeasurement "http://ontology.universaal.org/HealthMeasurement.owl#">
 				<!ENTITY  measurement "http://ontology.universaal.org/Measurement.owl#">
 				<!ENTITY sripas "http://www.inter-iot.eu/sripas#">
-                <!ENTITY sosa "http://www.w3.org/ns/sosa/">
-                <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
-                <!ENTITY ssn "http://www.w3.org/ns/ssn/">
-                <!ENTITY iiotex "http://inter-iot.eu/GOIoTPex#">
+				<!ENTITY sosa "http://www.w3.org/ns/sosa/">
+				<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+				<!ENTITY ssn "http://www.w3.org/ns/ssn/">
+				<!ENTITY iiotex "http://inter-iot.eu/GOIoTPex#">
 				<!ENTITY medex "http://inter-iot.eu/medex#">
-                <!ENTITY iiot "http://inter-iot.eu/GOIoTP#">
-                <!ENTITY time "http://www.w3.org/2006/time#">
-                <!ENTITY s2 "http://inter-iot.eu/syntax/SOFIA2#">
-                <!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#">
-                <!ENTITY s2mod "http://inter-iot.eu/SOFIA2mod#">
-                <!ENTITY sweet_units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl#">
+				<!ENTITY iiot "http://inter-iot.eu/GOIoTP#">
+				<!ENTITY time "http://www.w3.org/2006/time#">
+				<!ENTITY s2 "http://inter-iot.eu/syntax/SOFIA2#">
+				<!ENTITY ssn "http://purl.oclc.org/NET/ssnx/ssn#">
+				<!ENTITY s2mod "http://inter-iot.eu/SOFIA2mod#">
+				<!ENTITY sweet_units "http://sweet.jpl.nasa.gov/2.3/reprSciUnits.owl#">
 				<!ENTITY aha "http://ontologies.activageproject.eu/aha-ontology#">
 				<!ENTITY m3 "http://purl.org/iot/vocab/m3-lite#">
-                ]
+        ]
         >
 
 <rdf:RDF 
@@ -191,9 +191,9 @@
                 <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result;
 	    sosa:hasResultValue sripas:value;
-	    sosa:hasUnit  sripas:baseUnitURI
-	    [a sweet:BaseUnit ;
-		  sweet:hasSymbol sripas:unit_symbol].
+	    sosa:hasUnit  sripas:baseUnitURI ].
+	    sripas:baseUnitURI a sweet:BaseUnit ;
+		  sweet:hasSymbol sripas:unit_symbol.
         	</align:entity2>
                 <align:relation>=</align:relation>
 		<sripas:transformation rdf:parseType="Literal">
@@ -234,7 +234,6 @@
               <align:relation>=</align:relation>
                 </align:Cell>
           </align:map>
-
 
          <align:map>
           <align:Cell rdf:about="http://www.inter-iot.eu/sripas#COSensor">
