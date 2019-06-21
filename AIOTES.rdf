@@ -80,9 +80,10 @@
 			<sripas:step sripas:order="10" sripas:cell="http://www.inter-iot.eu/sripas#CreateCEFromDeviceObservation" />
 			<sripas:step sripas:order="11" sripas:cell="http://www.inter-iot.eu/sripas#CreateCEFromSimpleDeviceObservation" />
 			<sripas:step sripas:order="12" sripas:cell="http://www.inter-iot.eu/sripas#timeContextEvent" />
-			<sripas:step sripas:order="13" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement" />
-			<sripas:step sripas:order="14" sripas:cell="http://www.inter-iot.eu/sripas#changeUser" />
-			<sripas:step sripas:order="15" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp" />
+			<sripas:step sripas:order="13" sripas:cell="http://www.inter-iot.eu/sripas#timeContextEventFromResultTime" />
+			<sripas:step sripas:order="14" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement" />
+			<sripas:step sripas:order="15" sripas:cell="http://www.inter-iot.eu/sripas#changeUser" />
+			<sripas:step sripas:order="16" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp" />
 		</sripas:steps>
 		<sripas:cellFormat>
 			<iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle" />
@@ -210,9 +211,9 @@
 			</align:Cell>
 		</align:map>
 		<align:map>
-			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#timeContextEvent">
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#timeContextEventFromResultTime">
 				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a                    context:ContextEvent, sripas:node_CTX ;
-            sosa:resultTIme  [ a   sripas:xds-time] .
+            sosa:resultTime  [ a   sripas:xds-time] .
 				</align:entity1>
 				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a                     context:ContextEvent, sripas:node_CTX ;
             context:hasTimestamp [ a  sripas:node_time ]
