@@ -137,7 +137,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:hertz ;
         measurement:hasPrefix unit:mega ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -153,7 +154,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:hertz ;
         measurement:hasPrefix unit:kilo ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -169,7 +171,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:hertz ;
         measurement:hasPrefix unit:giga ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -185,7 +188,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:hertz ;
         measurement:hasPrefix unit:tera ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -201,7 +205,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:meter ;
         measurement:hasPrefix unit:centi ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -217,7 +222,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:meter ;
         measurement:hasPrefix unit:micro ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -233,7 +239,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:meter ;
         measurement:hasPrefix unit:mili ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -249,7 +256,8 @@
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:meter ;
         measurement:hasPrefix unit:nano ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -266,7 +274,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:amp ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -281,7 +290,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:candela ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -296,7 +306,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:century ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -311,7 +322,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:day ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -326,7 +338,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:decade ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -341,7 +354,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:hertz ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -356,7 +370,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:hour ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -371,7 +386,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:kelvin ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -386,7 +402,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:melenium ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -401,7 +418,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:meter ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -416,7 +434,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:minute ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -431,7 +450,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:mole ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -446,7 +466,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:month ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -461,7 +482,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:percent ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -476,7 +498,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:sec ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -491,7 +514,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:volt ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -506,7 +530,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:week ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
@@ -521,7 +546,8 @@
         <align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       measurement:Measurement ;
         measurement:hasUnit unit:year ;
-        measurement:value    [a sripas:value]] .</align:entity1>
+        measurement:value    [a sripas:value]] .
+      </align:entity1>
         <align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
           [ a       sosa:Result ;
         sosa:hasResultValue [a sripas:value] ;
