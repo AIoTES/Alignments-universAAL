@@ -82,8 +82,8 @@
 			<sripas:step sripas:order="12" sripas:cell="http://www.inter-iot.eu/sripas#timeContextEvent" />
 			<sripas:step sripas:order="13" sripas:cell="http://www.inter-iot.eu/sripas#timeContextEventFromResultTime" />
 			<sripas:step sripas:order="14" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement" />
-		<!--	<sripas:step sripas:order="15" sripas:cell="http://www.inter-iot.eu/sripas#changeUser" />
-			<sripas:step sripas:order="16" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp" />-->
+			<sripas:step sripas:order="15" sripas:cell="http://www.inter-iot.eu/sripas#changeUser" />
+			<sripas:step sripas:order="16" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp" />
 		</sripas:steps>
 		<sripas:cellFormat>
 			<iiot:DataFormat rdf:about="http://inter-iot.eu/sripas#turtle" />
@@ -247,6 +247,34 @@
                                       ]
                             ]
           ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		
+				<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#changeUser">
+				<!-- Change User Class; REVIEW after DM is updated with different User types -->
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+					[  a  iiot:User , &lt;http://ontology.universAAL.org/Profile.owl#User&gt; , sripas:node_CTY] .
+				</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string" >
+				[ a  &lt;http://ontology.universAAL.org/Profile.owl#User&gt; , sripas:node_CTY ] .
+					</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#changeUserProp">
+				<!-- Change User Class -->
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a        sripas:node_CTX ;
+            iiot:orderedByUser  [ a  sripas:node_CTY ]
+          ] .
+				</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+				[ a       sripas:node_CTX ;
+            uaal:theInvolvedHumanUser  [ a  sripas:node_CTY ]
+          ] .
+				</align:entity2>
 				<align:relation>=</align:relation>
 			</align:Cell>
 		</align:map>
