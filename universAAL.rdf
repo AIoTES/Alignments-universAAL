@@ -50,7 +50,7 @@
 	<align:Alignment>
 		<dcelem:title>universAAL-AIOTES-Alignment</dcelem:title>
 		<exmo:version>1.5</exmo:version>
-		<dcelem:creator>amedrano</dcelem:creator>
+		<dcelem:creator>AMEDRANO/regel/andre</dcelem:creator>
 		<dcelem:description>Alignment between universAAL Core Ontologies and AIOTES Datamodel</dcelem:description>
 		<dcelem:date>Wed Jun 02 11:29:56 GMT 2019</dcelem:date>
 		<align:onto1>
