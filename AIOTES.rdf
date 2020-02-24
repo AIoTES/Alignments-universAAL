@@ -48,7 +48,7 @@
 	xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	<align:Alignment>
-		<dcelem:title>AIOTES-universAAL'Alignment</dcelem:title>
+		<dcelem:title>AIOTES-universAAL-Alignment</dcelem:title>
 		<exmo:version>1.6</exmo:version>
 		<dcelem:creator>AMEDRANO/regel/andre</dcelem:creator>
 		<dcelem:description>Alignment between AIOTES Datamodel and universAAL Core Ontologies</dcelem:description>
