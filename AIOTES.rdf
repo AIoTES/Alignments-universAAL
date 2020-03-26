@@ -109,6 +109,82 @@
 			<sripas:step sripas:order="39" sripas:cell="http://www.inter-iot.eu/sripas#timeContextEvent" />
 			<sripas:step sripas:order="40" sripas:cell="http://www.inter-iot.eu/sripas#timeContextEventFromResultTime" />
 			<sripas:step sripas:order="41" sripas:cell="http://www.inter-iot.eu/sripas#bloodPreassureMeasurement" />
+      <sripas:step sripas:order="42" sripas:cell="http://www.inter-iot.eu/sripas#room" />
+      <sripas:step sripas:order="43" sripas:cell="http://www.inter-iot.eu/sripas#buildinglevel" />
+      <sripas:step sripas:order="44" sripas:cell="http://www.inter-iot.eu/sripas#way" />
+      <sripas:step sripas:order="45" sripas:cell="http://www.inter-iot.eu/sripas#place" />
+      <sripas:step sripas:order="46" sripas:cell="http://www.inter-iot.eu/sripas#coordinatesystem" />
+      <sripas:step sripas:order="47" sripas:cell="http://www.inter-iot.eu/sripas#physicaladdress" />
+      <sripas:step sripas:order="48" sripas:cell="http://www.inter-iot.eu/sripas#address" />
+      <sripas:step sripas:order="49" sripas:cell="http://www.inter-iot.eu/sripas#roomfunction" />
+      <sripas:step sripas:order="50" sripas:cell="http://www.inter-iot.eu/sripas#homearea" />
+      <sripas:step sripas:order="51" sripas:cell="http://www.inter-iot.eu/sripas#cityquarter" />
+      <sripas:step sripas:order="52" sripas:cell="http://www.inter-iot.eu/sripas#city" />
+      <sripas:step sripas:order="53" sripas:cell="http://www.inter-iot.eu/sripas#building" />
+      <sripas:step sripas:order="54" sripas:cell="http://www.inter-iot.eu/sripas#corridor" />
+      <sripas:step sripas:order="55" sripas:cell="http://www.inter-iot.eu/sripas#originedmetric" />
+      <sripas:step sripas:order="56" sripas:cell="http://www.inter-iot.eu/sripas#home" />
+      <sripas:step sripas:order="57" sripas:cell="http://www.inter-iot.eu/sripas#hall" />
+      <sripas:step sripas:order="58" sripas:cell="http://www.inter-iot.eu/sripas#outdoorplace" />
+      <sripas:step sripas:order="59" sripas:cell="http://www.inter-iot.eu/sripas#point" />
+      <sripas:step sripas:order="60" sripas:cell="http://www.inter-iot.eu/sripas#entrancehall" />
+      <sripas:step sripas:order="61" sripas:cell="http://www.inter-iot.eu/sripas#stairway" />
+      <sripas:step sripas:order="62" sripas:cell="http://www.inter-iot.eu/sripas#mailbox" />
+      <sripas:step sripas:order="63" sripas:cell="http://www.inter-iot.eu/sripas#country" />
+      <sripas:step sripas:order="64" sripas:cell="http://www.inter-iot.eu/sripas#indoorplace" />
+      <sripas:step sripas:order="65" sripas:cell="http://www.inter-iot.eu/sripas#state" />
+      <sripas:step sripas:order="66" sripas:cell="http://www.inter-iot.eu/sripas#cityregion" />
+      <sripas:step sripas:order="67" sripas:cell="http://www.inter-iot.eu/sripas#cityplace" />
+      <sripas:step sripas:order="68" sripas:cell="http://www.inter-iot.eu/sripas#staircase" />
+      <sripas:step sripas:order="69" sripas:cell="http://www.inter-iot.eu/sripas#region" />
+      <sripas:step sripas:order="70" sripas:cell="http://www.inter-iot.eu/sripas#location" />
+      <sripas:step sripas:order="71" sripas:cell="http://www.inter-iot.eu/sripas#bathroom" />
+      <sripas:step sripas:order="72" sripas:cell="http://www.inter-iot.eu/sripas#cellar" />
+      <sripas:step sripas:order="73" sripas:cell="http://www.inter-iot.eu/sripas#guestroom" />
+      <sripas:step sripas:order="74" sripas:cell="http://www.inter-iot.eu/sripas#guestwc" />
+      <sripas:step sripas:order="75" sripas:cell="http://www.inter-iot.eu/sripas#hobbyroom" />
+      <sripas:step sripas:order="76" sripas:cell="http://www.inter-iot.eu/sripas#kitchen" />
+      <sripas:step sripas:order="77" sripas:cell="http://www.inter-iot.eu/sripas#livingroom" />
+      <sripas:step sripas:order="78" sripas:cell="http://www.inter-iot.eu/sripas#sleepingroom" />
+      <sripas:step sripas:order="79" sripas:cell="http://www.inter-iot.eu/sripas#storageroom" />
+      <sripas:step sripas:order="80" sripas:cell="http://www.inter-iot.eu/sripas#studio" />
+      <sripas:step sripas:order="81" sripas:cell="http://www.inter-iot.eu/sripas#workroom" />
+      <sripas:step sripas:order="82" sripas:cell="http://www.inter-iot.eu/sripas#wardrobe" />
+      <sripas:step sripas:order="83" sripas:cell="http://www.inter-iot.eu/sripas#locationof" />
+      <sripas:step sripas:order="84" sripas:cell="http://www.inter-iot.eu/sripas#hasaddress" />
+      <sripas:step sripas:order="85" sripas:cell="http://www.inter-iot.eu/sripas#hasaddresscityplace" />
+      <sripas:step sripas:order="86" sripas:cell="http://www.inter-iot.eu/sripas#hasaddresscity" />
+      <sripas:step sripas:order="87" sripas:cell="http://www.inter-iot.eu/sripas#hasaddresscountry" />
+      <sripas:step sripas:order="88" sripas:cell="http://www.inter-iot.eu/sripas#hasaddresscityregion" />
+      <sripas:step sripas:order="89" sripas:cell="http://www.inter-iot.eu/sripas#hasaddresscityquarter" />
+      <sripas:step sripas:order="90" sripas:cell="http://www.inter-iot.eu/sripas#hasaddressstate" />
+      <sripas:step sripas:order="91" sripas:cell="http://www.inter-iot.eu/sripas#hasaddressregion" />
+      <sripas:step sripas:order="92" sripas:cell="http://www.inter-iot.eu/sripas#iscontainedin" />
+      <sripas:step sripas:order="93" sripas:cell="http://www.inter-iot.eu/sripas#isconnectedto" />
+      <sripas:step sripas:order="94" sripas:cell="http://www.inter-iot.eu/sripas#isadjacentto" />
+      <sripas:step sripas:order="95" sripas:cell="http://www.inter-iot.eu/sripas#contains" />
+      <sripas:step sripas:order="96" sripas:cell="http://www.inter-iot.eu/sripas#origin" />
+      <sripas:step sripas:order="97" sripas:cell="http://www.inter-iot.eu/sripas#coordiantesystem" />
+      <sripas:step sripas:order="98" sripas:cell="http://www.inter-iot.eu/sripas#fromlevel" />
+      <sripas:step sripas:order="99" sripas:cell="http://www.inter-iot.eu/sripas#tolevel" />
+      <sripas:step sripas:order="100" sripas:cell="http://www.inter-iot.eu/sripas#hasofficeid" />
+      <sripas:step sripas:order="101" sripas:cell="http://www.inter-iot.eu/sripas#hasdoorid" />
+      <sripas:step sripas:order="102" sripas:cell="http://www.inter-iot.eu/sripas#hasbuildingid" />
+      <sripas:step sripas:order="103" sripas:cell="http://www.inter-iot.eu/sripas#hasadditionalid" />
+      <sripas:step sripas:order="104" sripas:cell="http://www.inter-iot.eu/sripas#hashallid" />
+      <sripas:step sripas:order="105" sripas:cell="http://www.inter-iot.eu/sripas#hasdeskid" />
+      <sripas:step sripas:order="106" sripas:cell="http://www.inter-iot.eu/sripas#hasfloorid" />
+      <sripas:step sripas:order="107" sripas:cell="http://www.inter-iot.eu/sripas#hasextendedaddressdescription" />
+      <sripas:step sripas:order="108" sripas:cell="http://www.inter-iot.eu/sripas#hasaddresspostalcode" />
+      <sripas:step sripas:order="109" sripas:cell="http://www.inter-iot.eu/sripas#hasname" />
+      <sripas:step sripas:order="110" sripas:cell="http://www.inter-iot.eu/sripas#rotatez" />
+      <sripas:step sripas:order="111" sripas:cell="http://www.inter-iot.eu/sripas#rotatey" />
+      <sripas:step sripas:order="112" sripas:cell="http://www.inter-iot.eu/sripas#rotatex" />
+      <sripas:step sripas:order="113" sripas:cell="http://www.inter-iot.eu/sripas#xposition" />
+      <sripas:step sripas:order="114" sripas:cell="http://www.inter-iot.eu/sripas#zposition" />
+      <sripas:step sripas:order="115" sripas:cell="http://www.inter-iot.eu/sripas#yposition" />
+      <sripas:step sripas:order="116" sripas:cell="http://www.inter-iot.eu/sripas#postofficebox" />
+      <sripas:step sripas:order="117" sripas:cell="http://www.inter-iot.eu/sripas#haszipcode" />
 		<!--	<sripas:step sripas:order="15" sripas:cell="http://www.inter-iot.eu/sripas#changeUser" />
 			<sripas:step sripas:order="16" sripas:cell="http://www.inter-iot.eu/sripas#changeUserProp" />-->
 		</sripas:steps>
@@ -722,6 +798,634 @@
 				<align:relation>=</align:relation>
 			</align:Cell>
 		</align:map>
-
+<!-- Location Classes -->
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#room">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Room , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#buildinglevel">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:BuildingLevel , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:BuildingLevel , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#way">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Way , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Way , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#place">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Place , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Place , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#coordinatesystem">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:CoordinateSystem , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:CoordinateSystem , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#physicaladdress">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:PhysicalAddress , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:PhysicalAddress , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#address">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Address , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Address , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#roomfunction">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:RoomFunction , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:RoomFunction , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#homearea">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:HomeArea , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:HomeArea , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#cityquarter">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:CityQuarter , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:CityQuarter , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#city">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:City , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:City , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#building">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Building , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Building , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#corridor">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Corridor , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Corridor , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#originedmetric">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:OriginedMetric , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:OriginedMetric , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#home">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Home , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Home , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hall">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Hall , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Hall , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#outdoorplace">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:OutdoorPlace , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:OutdoorPlace , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#point">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Point , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Point , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#entrancehall">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:EntranceHall , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:EntranceHall , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#stairway">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:StairWay , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:StairWay , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#mailbox">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:MailBox , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:MailBox , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#country">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Country , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Country , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#indoorplace">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:IndoorPlace , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:IndoorPlace , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#state">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:State , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:State , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#cityregion">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:CityRegion , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:CityRegion , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#cityplace">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:CityPlace , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:CityPlace , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#staircase">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:StairCase , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:StairCase , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#region">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Region , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Region , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#location">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:ReferencedLocation , sripas:node_CTY ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[  a  loc:Location , sripas:node_CTY] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+<!-- Location Enumeration Room Function -->
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#bathroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:BathRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:BathRoom ] . loc:BathRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#cellar">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:Cellar ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:Cellar ] . loc:Cellar a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#guestroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:GuestRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:GuestRoom ] . loc:GuestRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#guestwc">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:GuestWC ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:GuestWC ] . loc:GuestWC a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hobbyroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:HobbyRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:HobbyRoom ] . loc:HobbyRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#kitchen">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:Kitchen ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:Kitchen ] . loc:Kitchen a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#livingroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:LivingRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:LivingRoom ] . loc:LivingRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#sleepingroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:SleepingRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:SleepingRoom ] . loc:SleepingRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#storageroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:StorageRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:StorageRoom ] . loc:StorageRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#studio">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:Studio ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:Studio ] . loc:Studio a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#workroom">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:WorkRoom ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:WorkRoom ] . loc:WorkRoom a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#wardrobe">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  loc:Room , sripas:node_CTY;
+					aha:roomFunction loc:Wardrobe ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  aha:Room , sripas:node_CTY;
+					loc:roomFunction loc:Wardrobe ] . loc:Wardrobe a loc:RoomFunction.</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+<!-- Location Properties -->
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#locationof">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:locationOf [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:locationOf [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddress">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddress [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddress [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddresscityplace">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressCityPlace [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressCityPlace [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddresscity">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressCity [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressCity [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddresscountry">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressCountry [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressCountry [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddresscityregion">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressCityRegion [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressCityRegion [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddresscityquarter">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressCityQuarter [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressCityQuarter [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddressstate">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressState [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressState [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddressregion">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressRegion [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressRegion [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#iscontainedin">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:isContainedIn [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:isContainedIn [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#isconnectedto">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:isConnectedTo [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:isConnectedTo [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#isadjacentto">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:isAdjacentTo [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:isAdjacentTo [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#contains">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:contains [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:contains [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#origin">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:origin [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:origin [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#coordiantesystem">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:coordianteSystem [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:coordianteSystem [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#fromlevel">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:fromLevel [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:fromLevel [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#tolevel">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:toLevel [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:toLevel [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasofficeid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasOfficeID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasOfficeID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasdoorid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasDoorID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasDoorID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasbuildingid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasBuildingID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasBuildingID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasadditionalid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAdditionalID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAdditionalID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hashallid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasHallID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasHallID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasdeskid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasDeskID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasDeskID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasfloorid">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasFloorID [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasFloorID [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasextendedaddressdescription">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasExtendedAddressDescription [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasExtendedAddressDescription [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasaddresspostalcode">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasAddressPostalCode [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasAddressPostalCode [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#hasname">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasName [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasName [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#rotatez">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:rotateZ [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:rotateZ [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#rotatey">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:rotateY [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:rotateY [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#rotatex">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:rotateX [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:rotateX [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#xposition">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:xPosition [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:xPosition [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#zposition">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:zPosition [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:zPosition [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#yposition">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:yPosition [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:yPosition [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#postofficebox">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:postOfficeBox [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:postOfficeBox [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
+		<align:map>
+			<align:Cell rdf:about="http://www.inter-iot.eu/sripas#haszipcode">
+				<align:entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					aha:hasZIPCode [a sripas:node_CTX] ] .</align:entity1>
+				<align:entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[ a  sripas:node_CTY;
+					loc:hasZIPCode [a sripas:node_CTX] ] .</align:entity2>
+				<align:relation>=</align:relation>
+			</align:Cell>
+		</align:map>
 	</align:Alignment>
 </rdf:RDF>
