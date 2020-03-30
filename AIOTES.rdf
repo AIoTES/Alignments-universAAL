@@ -49,7 +49,7 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 	<align:Alignment>
 		<dcelem:title>AIOTES-universAAL-Alignment</dcelem:title>
-		<exmo:version>1.6</exmo:version>
+		<exmo:version>2.0</exmo:version>
 		<dcelem:creator>AMEDRANO/regel/andre</dcelem:creator>
 		<dcelem:description>Alignment between AIOTES Datamodel and universAAL Core Ontologies</dcelem:description>
 		<dcelem:date>Wed Jun 19 11:29:56 GMT 2019</dcelem:date>
